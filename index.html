@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Điền lịch 168</title>
+  <title>Điền lịch làm việc</title>
   <style>
     :root { --radius: 14px; }
     body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 0; background: #f7f7fb; color:#111; }
@@ -31,7 +31,7 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>Điền lịch 168</h1>
+      <h1>Điền lịch làm việc</h1>
       <div class="muted">Nhập <b>Họ và tên</b> và chọn các <b>khung giờ</b> cho từng ngày (có thể thêm nhiều khung/Ngày). Phút sẽ được làm tròn: ≤15 → :00; 15–&lt;45 → :30; ≥45 → tròn lên giờ.</div>
 
       <label for="name">Họ và tên</label>
@@ -43,7 +43,7 @@
         <button class="submit" id="submitBtn">Gửi lịch lên Google Sheet</button>
         <button class="ghost" id="resetBtn">Xoá tất cả</button>
       </div>
-      <div class="note">Sau khi gửi, sheet mới sẽ được tạo (nếu chưa có) dựa trên sheet <b>MẪU</b> và tự động tô màu cam các ô thời gian trong lưới 168.</div>
+      <div class="note">Sau khi gửi, sheet mới sẽ được tạo (nếu chưa có) dựa trên sheet <b>MẪU</b> và tự động tô màu cam các ô thời gian trong lưới làm việc.</div>
       <div class="ok" id="okBox">Đã gửi! Mở Google Sheet để xem cập nhật.</div>
       <div class="err" id="errBox"></div>
     </div>
@@ -51,7 +51,7 @@
 
   <script>
     // === CẦN ĐIỀN: URL Web App của Apps Script ===
-    const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbyEpJ9zsM__7O3uONud1lQiKDk8OptfQZpHfGu2hr9N/dev';
+    const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbyB8QnmtaScnjKX63Cyw7F9iGDS804nS7AQLZ9Hu9CkvCTMGtmRiXTEa26JooSIBxqojA/exec';
 
     const DAY_LABELS = [
       ['thu2', 'Thứ 2'], ['thu3','Thứ 3'], ['thu4','Thứ 4'], ['thu5','Thứ 5'],
